@@ -9,3 +9,6 @@ in English and German. Plain HTML and CSS, hosted with GitHub Pages – no cooki
 
 The Syriac heading uses SyrCOM Jerusalem (© 2001 Beth Mardutho: The Syriac Institute, for free distribution),
 included unmodified in `assets/`.
+
+The App Store badges in `assets/` (“Download on the App Store”, English; “Laden im App Store”, German; black) are
+Apple's official artwork, used unmodified as described in Apple's App Store marketing guidelines.

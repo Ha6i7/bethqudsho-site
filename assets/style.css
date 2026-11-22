@@ -89,11 +89,12 @@ main { max-width: 760px; margin: 0 auto; padding: 28px 20px 48px; }
 @media (prefers-color-scheme: dark) { .hero .syriac { color: var(--gold); } }
 .hero p.lead { color: var(--muted); font-size: 19px; max-width: 560px; margin: 14px auto 0; }
 
-.store {
-  display: inline-block; margin-top: 24px; padding: 12px 22px; border-radius: 999px;
-  background: var(--burgundy); color: #fff; text-decoration: none; font-weight: 600;
-}
-.store[aria-disabled="true"] { opacity: 0.85; cursor: default; }
+/* Apple-Abzeichen „Download on the App Store“: Seitenverhältnis unverändert, Freiraum ≥ ¼ der Höhe (54 px → 14 px) */
+.store { margin-top: 24px; }
+.store a { display: inline-block; padding: 14px; line-height: 0; }
+.store img { height: 54px; width: auto; display: block; }
+/* gewählte Sprache: Abzeichen-Link bleibt ein Block mit Freiraum (die Sprachregel unten setzt sonst „revert“) */
+html.js[data-lang="en"] .store a[lang="en"], html.js[data-lang="de"] .store a[lang="de"] { display: inline-block; }
 
 .card {
   background: var(--card);

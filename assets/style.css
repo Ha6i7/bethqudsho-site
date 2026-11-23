@@ -104,6 +104,11 @@ html.js[data-lang="en"] .store a[lang="en"], html.js[data-lang="de"] .store a[la
   margin-top: 20px;
 }
 
+/* Quellen & Dank */
+.thanks { margin-top: 28px; }
+.thanks h2 { margin-top: 0; font-size: 19px; }
+.thanks p { margin: 6px 0 0; color: var(--text); }
+
 .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; margin-top: 28px; }
 .features .card { margin-top: 0; }
 .features h3 { margin: 0 0 4px; font-size: 17px; color: var(--burgundy); }

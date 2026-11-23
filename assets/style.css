@@ -96,6 +96,19 @@ main { max-width: 760px; margin: 0 auto; padding: 28px 20px 48px; }
 /* gewählte Sprache: Abzeichen-Link bleibt ein Block mit Freiraum (die Sprachregel unten setzt sonst „revert“) */
 html.js[data-lang="en"] .store a[lang="en"], html.js[data-lang="de"] .store a[lang="de"] { display: inline-block; }
 
+/* Zusammenarbeit: Logos unverändert auf weißem Feld (wie in der App), innen 10 % Freiraum */
+.collab { margin-top: 6px; }
+.collab .logos { display: flex; justify-content: center; gap: 16px; }
+.collab .logos a { display: block; line-height: 0; border-radius: 20px; }
+.collab .logos img {
+  width: 88px; height: 88px; padding: 9px; display: block;
+  background: #fff; border: 1px solid var(--line); border-radius: 20px;
+  transition: transform 0.2s ease;
+}
+.collab .logos a:hover img { transform: scale(1.04); }
+@media (prefers-reduced-motion: reduce) { .collab .logos img { transition: none; } .collab .logos a:hover img { transform: none; } }
+.collab p { margin: 12px auto 0; max-width: 520px; font-weight: 600; font-size: 17px; }
+
 .card {
   background: var(--card);
   border: 1px solid var(--line);
